@@ -1,0 +1,19 @@
+  version: '3'
+
+  services:
+    web:
+      build: .
+      container_name: flask-gunicorn-paper-scanner
+      restart: always
+      ports:
+        - "${PORT}:${PORT}"
+    nginx:
+      image: nginx:1.17
+      container_name: ngx-flask-paper-scanner
+      ports:
+        - "82:82"
+      volumes:
+        - ./nginx:/etc/nginx/conf.d
+        - ./app/static/:/static/
+      depends_on:
+        - web

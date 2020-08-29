@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scanner</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="/static/style.css">
+        <link rel="stylesheet" type="text/css" href="/static/skeleton/css/skeleton.css">
+        <link rel="stylesheet" type="text/css" href="/static/skeleton/css/normalize.css">
+        <style type="text/css">
+
+        </style>
+    </head>
+    <body >
+        <div >
+            <div class="example outer">
+                <div class="inner">
+                    <div>
+                       <button class="" id="select_file">Select a file</button>
+                       <button class="button-primary" name="calculate" id="create">Convert</button>
+                    <form id="form">
+                        <input type="file" id="selectfile" name="file"style="display:none;" >
+                        <input type="text" id="json_coord" name="coord" style="display:none;">
+                    </form>
+                    </div>
+
+                    <canvas id="jPolygon" class="main_canvas" style="cursor:crosshair; float:left;" onmousedown="mouseDown(event)" oncontextmenu="return false;" onmouseup="mouseUp(event)" onmousemove="mouseMove(event)">
+                    Your browser does not support the HTML5 canvas tag.
+                    </canvas>
+                    <div class="image"  style="float:left;">
+                        <img src="data:image/jpeg;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" id="img_prev" style="width: 500px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="/static/poly.js"></script>
+        <script type="text/javascript" src="/static/scripts.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,13 @@
+body{
+    margin-top: 40px;
+    background-color: #FAFAFA;
+}
+.inner {
+  display: table;
+  margin: 0 auto;
+}
+
+.outer {
+  width:100%;
+  float:left;
+}
