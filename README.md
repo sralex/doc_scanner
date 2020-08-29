@@ -1,4 +1,4 @@
-# paper scanner with deployment eviroment
+# Document scanner with deployment eviroment
 
 This is a small project, which can help us turn a photo of a document into a more realistic document.
 
@@ -34,3 +34,7 @@ cd app
 pip3 install -r requirements.txt 
 python main.py
 ```
+
+
+Demo:<br/>
+![image](https://github.com/sralex/doc_scanner/blob/master/preview.png)
