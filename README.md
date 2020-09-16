@@ -1,4 +1,4 @@
-# Document scanner with deployment enviroment
+# Document scanner with deployment environment
 
 This is a small project, which can help us turn a photo of a document into a more realistic document.
 
